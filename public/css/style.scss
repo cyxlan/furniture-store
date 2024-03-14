@@ -2,9 +2,11 @@
   box-sizing: border-box;
 }
 // reset styles
-button {
+button,
+input {
   border: 0;
   padding: 0;
+  margin: 0;
   background: none;
 }
 a {
@@ -50,6 +52,31 @@ nav {
   background-color: pink;
   height: 50px;
   width: 50px;
+}
+
+#nav-search-bar {
+  position: absolute;
+  z-index: 11;
+  top: 80px; // under navbar
+  left: 0;
+  font-size: 0; // remove gap between elements
+  width: 100%;
+  background-color: grey;
+
+  input[type="search"] {
+    vertical-align: top;
+    height: 50px;
+    width: calc(100% - 50px);
+    background-color: #fff;
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  #search-btn {
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: lightgray;
+  }
 }
 
 #nav-links {
