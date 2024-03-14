@@ -73,4 +73,19 @@ nav {
   width: 100%;
 }
 
+#hero-carousel {
+  position: relative;
+}
+#hero-carousel .glide__arrow {
+  position: absolute;
+  font-size: 30px;
+  top: 110px;
+}
+#hero-carousel .glide__arrow--left {
+  left: 0;
+}
+#hero-carousel .glide__arrow--right {
+  right: 0;
+}
+
 /*# sourceMappingURL=style.css.map */

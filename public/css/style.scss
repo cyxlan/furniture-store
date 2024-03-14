@@ -75,3 +75,19 @@ nav {
   height: 250px;
   width: 100%;
 }
+
+#hero-carousel {
+  position: relative;
+
+  .glide__arrow {
+    position: absolute;
+    font-size: 30px;
+    top: 110px; // img height(250)/2 - self(30)/2
+  }
+  .glide__arrow--left {
+    left: 0;
+  }
+  .glide__arrow--right {
+    right: 0;
+  }
+}
