@@ -1,3 +1,19 @@
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  background: none;
+}
+
 nav {
   background-color: gray;
   height: 80px;
@@ -9,17 +25,11 @@ nav {
 
 .nav-group {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
-#nav-burger,
-#nav-close,
-#nav-search,
-#nav-account,
-#nav-cart {
-  background-color: green;
-  height: 50px;
-  width: 50px;
+.nav-btn i {
+  font-size: 30px;
 }
 
 #nav-close {

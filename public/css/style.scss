@@ -1,3 +1,20 @@
+// screen reader only (from https://www.a11yproject.com/posts/how-to-hide-content/)
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+// reset styles
+button {
+  border: 0;
+  padding: 0;
+  background: none;
+}
+
 // navbar
 nav {
   background-color: gray;
@@ -7,20 +24,14 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-
 .nav-group {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
-#nav-burger,
-#nav-close,
-#nav-search,
-#nav-account,
-#nav-cart {
-  background-color: green;
-  height: 50px;
-  width: 50px;
+// icons
+.nav-btn i {
+  font-size: 30px;
 }
 #nav-close {
   display: none;
