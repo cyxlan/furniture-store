@@ -55,6 +55,7 @@ nav {
 #nav-links {
   display: none;
   position: absolute;
+  z-index: 10;
   top: 80px; // under navbar
   left: 0;
   background: lightgray;
