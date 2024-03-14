@@ -79,13 +79,31 @@ nav {
 #hero-carousel .glide__arrow {
   position: absolute;
   font-size: 30px;
-  top: 110px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 #hero-carousel .glide__arrow--left {
   left: 0;
 }
 #hero-carousel .glide__arrow--right {
   right: 0;
+}
+#hero-carousel .glide__bullets {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#hero-carousel .glide__bullet {
+  font-size: 10px;
+  transition: opacity 200ms ease-in-out;
+  opacity: 0.4;
+}
+#hero-carousel .glide__bullet:not(:last-child) {
+  padding-right: 20px;
+}
+#hero-carousel .glide__bullet--active {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
