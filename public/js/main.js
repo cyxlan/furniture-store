@@ -11,4 +11,12 @@ $(document).ready(function(){
     $("#nav-close").hide();
     $("#nav-burger").show();
   });
-}); 
+});
+
+// Glide
+const heroGlide = new Glide("#hero-carousel", {
+  type: "carousel",
+  perView: 1,
+  gap: 0
+})
+heroGlide.mount()

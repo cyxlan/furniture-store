@@ -67,4 +67,10 @@ nav {
   border-bottom: 2px solid grey;
 }
 
+.hero-img {
+  background-color: darkcyan;
+  height: 250px;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
