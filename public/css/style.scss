@@ -1,0 +1,33 @@
+// navbar
+nav {
+  background-color: gray;
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-group {
+  display: flex;
+  gap: 10px;
+}
+
+#nav-burger,
+#nav-close,
+#nav-search,
+#nav-account,
+#nav-cart {
+  background-color: green;
+  height: 50px;
+  width: 50px;
+}
+#nav-close {
+  display: none;
+}
+
+#nav-logo {
+  background-color: pink;
+  height: 50px;
+  width: 50px;
+}
