@@ -28,8 +28,8 @@ a {
 
 // navbar
 nav {
-  background-color: gray;
-  height: 80px;
+  background-color: #fff6ee;
+  height: 60px;
   padding: 0 20px;
   display: flex;
   align-items: center;
@@ -40,9 +40,17 @@ nav {
   gap: 20px;
 }
 
+.nav-group i,
+#nav-logo h1 {
+  color: #604d3e;
+}
+
 // icons
-.nav-btn i {
+.nav-left i {
   font-size: 30px;
+}
+.nav-right i {
+  font-size: 25px;
 }
 
 #nav-logo {
@@ -51,7 +59,7 @@ nav {
   gap: 10px;
 
   img {
-    height: 40px;
+    height: 35px;
     width: auto;
   }
   h1 {
@@ -62,13 +70,17 @@ nav {
   }
 }
 
-#nav-search-bar {
+#nav-search-bar,
+#nav-links {
   position: absolute;
-  z-index: 11;
-  top: 80px; // under navbar
+  top: 60px; // under navbar
   left: 0;
-  font-size: 0; // remove gap between elements
   width: 100%;
+}
+
+#nav-search-bar {
+  z-index: 11;
+  font-size: 0; // remove gap between elements
   background-color: grey;
 
   input[type="search"] {
@@ -89,12 +101,8 @@ nav {
 
 #nav-links {
   display: none;
-  position: absolute;
   z-index: 10;
-  top: 80px; // under navbar
-  left: 0;
   background: lightgray;
-  width: 100%;
   padding: 10px 20px;
 
   li {

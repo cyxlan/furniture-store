@@ -26,8 +26,8 @@ a {
 }
 
 nav {
-  background-color: gray;
-  height: 80px;
+  background-color: #fff6ee;
+  height: 60px;
   padding: 0 20px;
   display: flex;
   align-items: center;
@@ -39,8 +39,17 @@ nav {
   gap: 20px;
 }
 
-.nav-btn i {
+.nav-group i,
+#nav-logo h1 {
+  color: #604d3e;
+}
+
+.nav-left i {
   font-size: 30px;
+}
+
+.nav-right i {
+  font-size: 25px;
 }
 
 #nav-logo {
@@ -49,7 +58,7 @@ nav {
   gap: 10px;
 }
 #nav-logo img {
-  height: 40px;
+  height: 35px;
   width: auto;
 }
 #nav-logo h1 {
@@ -59,13 +68,17 @@ nav {
   font-family: "Ubuntu", sans-serif;
 }
 
-#nav-search-bar {
+#nav-search-bar,
+#nav-links {
   position: absolute;
-  z-index: 11;
-  top: 80px;
+  top: 60px;
   left: 0;
-  font-size: 0;
   width: 100%;
+}
+
+#nav-search-bar {
+  z-index: 11;
+  font-size: 0;
   background-color: grey;
 }
 #nav-search-bar input[type=search] {
@@ -85,12 +98,8 @@ nav {
 
 #nav-links {
   display: none;
-  position: absolute;
   z-index: 10;
-  top: 80px;
-  left: 0;
   background: lightgray;
-  width: 100%;
   padding: 10px 20px;
 }
 #nav-links li {
