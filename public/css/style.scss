@@ -122,6 +122,8 @@ nav {
     padding: 0 20px;
   }
   .autoComplete_wrapper ul:not([hidden]) {
+    position: absolute;
+    width: 100%;
     padding: 30px 20px;
     background-color: #fff;
     border-bottom: 2px solid $brown-2;
@@ -129,13 +131,16 @@ nav {
     flex-direction: column;
     gap: 20px;
 
+    li {
+      cursor: pointer;
+    }
     li:not(:last-child) {
       padding-bottom: 20px;
       border-bottom: 2px solid $brown-2;
     }
     // highlight on matched letters
     mark {
-      color: $brown;
+      color: $accent;
       font-weight: 800;
       background: none;
     }
@@ -161,10 +166,6 @@ nav {
   a:focus {
     border-color: $accent;
   }
-}
-
-.hidden {
-  display: none;
 }
 
 // hero section
@@ -351,6 +352,10 @@ footer {
 
 // small screens
 @media only screen and (max-width: 767px) {
+  .hidden {
+    display: none;
+  }
+
   #nav-links {
     padding: 10px 20px;
 
@@ -366,8 +371,9 @@ footer {
 
 // medium & up screens
 @media only screen and (min-width: 768px) {
-  // hide burger menu btn
-  .nav-left button {
+  // hide burger menu & toggle search btn
+  .nav-left button,
+  #nav-search {
     display: none;
   }
 
@@ -388,6 +394,23 @@ footer {
     }
     li {
       padding: 10px 0;
+    }
+  }
+
+  #nav-search-bar {
+    position: static;
+
+    input[type="search"],
+    .autoComplete_wrapper ul:not([hidden]) {
+      border: 2px solid $brown-2;
+      border-radius: 20px;
+      width: 500px;
+    }
+    input[type="search"] {
+      height: 40px;
+    }
+    .autoComplete_wrapper ul:not([hidden]) {
+      top: 60px;
     }
   }
 }

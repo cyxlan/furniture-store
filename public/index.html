@@ -37,6 +37,11 @@
         </a>
       </div>
       <div class="nav-group nav-right">
+        <div id="nav-search-bar" class="hidden">
+          <form method="get" action="/search">
+            <input id="search-input" type="search" name="q" placeholder="Search" />
+          </form>
+        </div>
         <button type="button" class="nav-btn" id="nav-search">
           <i class="bi bi-search" title="Search" aria-hidden="true"></i>
           <span class="sr-only">Search</span>
@@ -49,11 +54,6 @@
           <i class="bi bi-bag-fill" title="Shopping cart" aria-hidden="true"></i>
           <span class="sr-only">Shopping cart</span>
         </button>
-      </div>
-      <div id="nav-search-bar" class="hidden">
-        <form method="get" action="/search">
-          <input id="search-input" type="search" name="q" placeholder="Search" />
-        </form>
       </div>
       <div id="nav-links">
         <ul>

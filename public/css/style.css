@@ -116,6 +116,8 @@ nav {
   padding: 0 20px;
 }
 #nav-search-bar .autoComplete_wrapper ul:not([hidden]) {
+  position: absolute;
+  width: 100%;
   padding: 30px 20px;
   background-color: #fff;
   border-bottom: 2px solid #ab998c;
@@ -123,12 +125,15 @@ nav {
   flex-direction: column;
   gap: 20px;
 }
+#nav-search-bar .autoComplete_wrapper ul:not([hidden]) li {
+  cursor: pointer;
+}
 #nav-search-bar .autoComplete_wrapper ul:not([hidden]) li:not(:last-child) {
   padding-bottom: 20px;
   border-bottom: 2px solid #ab998c;
 }
 #nav-search-bar .autoComplete_wrapper ul:not([hidden]) mark {
-  color: #604d3e;
+  color: #a0381f;
   font-weight: 800;
   background: none;
 }
@@ -151,10 +156,6 @@ nav {
 #nav-links a:hover,
 #nav-links a:focus {
   border-color: #a0381f;
-}
-
-.hidden {
-  display: none;
 }
 
 #hero {
@@ -343,6 +344,9 @@ footer h2 {
 }
 
 @media only screen and (max-width: 767px) {
+  .hidden {
+    display: none;
+  }
   #nav-links {
     padding: 10px 20px;
   }
@@ -354,7 +358,8 @@ footer h2 {
   }
 }
 @media only screen and (min-width: 768px) {
-  .nav-left button {
+  .nav-left button,
+  #nav-search {
     display: none;
   }
   nav,
@@ -373,6 +378,21 @@ footer h2 {
   }
   #nav-links li {
     padding: 10px 0;
+  }
+  #nav-search-bar {
+    position: static;
+  }
+  #nav-search-bar input[type=search],
+  #nav-search-bar .autoComplete_wrapper ul:not([hidden]) {
+    border: 2px solid #ab998c;
+    border-radius: 20px;
+    width: 500px;
+  }
+  #nav-search-bar input[type=search] {
+    height: 40px;
+  }
+  #nav-search-bar .autoComplete_wrapper ul:not([hidden]) {
+    top: 60px;
   }
 }
 
