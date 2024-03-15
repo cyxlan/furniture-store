@@ -25,6 +25,11 @@ a {
   width: 1px;
 }
 
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #604d3e;
+}
+
 nav {
   background-color: #fff6ee;
   height: 60px;
@@ -65,7 +70,6 @@ nav {
   font-size: 18px;
   letter-spacing: 5px;
   font-weight: 500;
-  font-family: "Ubuntu", sans-serif;
 }
 
 #nav-search-bar,
@@ -99,14 +103,17 @@ nav {
 #nav-links {
   display: none;
   z-index: 10;
-  background: lightgray;
+  background: #eeded1;
   padding: 10px 20px;
 }
 #nav-links li {
   padding: 15px 0;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
 }
 #nav-links li:not(:last-child) {
-  border-bottom: 2px solid grey;
+  border-bottom: 2px solid #ab998c;
 }
 
 .hidden {
