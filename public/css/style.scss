@@ -39,8 +39,10 @@ body {
 
 
 // navbar
-nav {
+header {
   background-color: $bg;
+}
+nav {
   height: 60px;
   padding: 0 20px;
   display: flex;
@@ -58,6 +60,9 @@ nav {
 }
 
 // icons
+.nav-group i {
+  cursor: pointer;
+}
 .nav-left i {
   font-size: 30px;
 }
@@ -133,16 +138,11 @@ nav {
   display: none;
   z-index: 10;
   background: $bg-2;
-  padding: 10px 20px;
 
   li {
-    padding: 15px 0;
     font-size: 16px;
     font-family: $font-secondary;
     font-weight: 500;
-  }
-  li:not(:last-child) {
-    border-bottom: 2px solid $brown-2;
   }
 }
 
@@ -330,4 +330,48 @@ footer {
 }
 .social-icon {
   font-size: 24px;
+}
+
+// small screens
+@media only screen and (max-width: 767px) {
+  #nav-links {
+    padding: 10px 20px;
+
+    li {
+      padding: 15px 0;
+    }
+    // separator line
+    li:not(:last-child) {
+      border-bottom: 2px solid $brown-2;
+    }
+  }
+}
+
+// medium & up screens
+@media only screen and (min-width: 768px) {
+  // hide burger menu btn
+  .nav-left button {
+    display: none;
+  }
+
+  nav,
+  #nav-links ul {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  // horizontal nav links under navbar
+  #nav-links {
+    display: block;
+
+    ul {
+      padding: 0 20px;
+      height: 35px;
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    li {
+      padding: 10px 0;
+    }
+  }
 }

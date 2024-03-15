@@ -30,8 +30,11 @@ body {
   color: #604d3e;
 }
 
-nav {
+header {
   background-color: #fff6ee;
+}
+
+nav {
   height: 60px;
   padding: 0 20px;
   display: flex;
@@ -47,6 +50,10 @@ nav {
 .nav-group i,
 #nav-logo h1 {
   color: #604d3e;
+}
+
+.nav-group i {
+  cursor: pointer;
 }
 
 .nav-left i {
@@ -122,16 +129,11 @@ nav {
   display: none;
   z-index: 10;
   background: #eeded1;
-  padding: 10px 20px;
 }
 #nav-links li {
-  padding: 15px 0;
   font-size: 16px;
   font-family: "Noto Sans", sans-serif;
   font-weight: 500;
-}
-#nav-links li:not(:last-child) {
-  border-bottom: 2px solid #ab998c;
 }
 
 .hidden {
@@ -321,6 +323,41 @@ footer h2 {
 
 .social-icon {
   font-size: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  #nav-links {
+    padding: 10px 20px;
+  }
+  #nav-links li {
+    padding: 15px 0;
+  }
+  #nav-links li:not(:last-child) {
+    border-bottom: 2px solid #ab998c;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .nav-left button {
+    display: none;
+  }
+  nav,
+  #nav-links ul {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  #nav-links {
+    display: block;
+  }
+  #nav-links ul {
+    padding: 0 20px;
+    height: 35px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  #nav-links li {
+    padding: 10px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
