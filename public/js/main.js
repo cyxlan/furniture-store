@@ -53,6 +53,7 @@ $(document).ready(function(){
 // Glide
 const heroGlide = new Glide("#hero-carousel", {
   type: "carousel",
+  startAt: 1,
   perView: 1,
   gap: 0
 })
