@@ -133,4 +133,21 @@ nav {
   opacity: 1;
 }
 
+#products {
+  padding: 30px 20px;
+}
+
+.products-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.products-categories button {
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 2px solid grey;
+}
+
 /*# sourceMappingURL=style.css.map */
