@@ -31,6 +31,19 @@ $(document).ready(function(){
     }
     $("#nav-search-bar").toggleClass("hidden");
   });
+
+  // show/hide product cards on clicking category
+  $(".products-categories button").on("click", function() {
+    const category = $("#products-" + this.textContent.toLowerCase());
+    const activeCategory = $(".product-cards.active");
+
+    if (!category.hasClass("active")) {
+      activeCategory.hide().removeClass("active");
+      category.css("display", "flex").hide() // so display will be flex after animation
+      .fadeTo(200, 1)
+      .addClass("active");
+    }
+  })
 });
 
 // Glide

@@ -166,6 +166,10 @@ nav {
   justify-content: center;
   gap: 20px;
 }
+.product-cards:not(.active) {
+  display: none;
+}
+
 .product-card {
   max-width: 150px;
 }
@@ -173,13 +177,13 @@ nav {
   width: 150px;
   height: 150px;
 }
-.products-featured .product-img {
+#products-featured .product-img {
   background-color: darkred;
 }
-.products-new .product-img {
+#products-new .product-img {
   background-color: darkorange;
 }
-.products-bestsellers .product-img {
+#products-bestsellers .product-img {
   background-color: darkgreen;
 }
 .product-name {
