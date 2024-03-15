@@ -34,7 +34,7 @@ header {
   background-color: #fff6ee;
 }
 
-nav {
+#nav-topbar {
   height: 60px;
   padding: 0 20px;
   display: flex;
@@ -85,14 +85,6 @@ nav {
   font-size: 18px;
   letter-spacing: 5px;
   font-weight: 500;
-}
-
-#nav-search-bar,
-#nav-links {
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
 }
 
 #nav-links,
@@ -368,6 +360,13 @@ footer h2 {
   .hidden {
     display: none;
   }
+  #nav-search-bar,
+  #nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
   #nav-links {
     padding: 10px 20px;
   }
@@ -383,7 +382,7 @@ footer h2 {
   #nav-search {
     display: none;
   }
-  nav,
+  #nav-topbar,
   #nav-links ul {
     max-width: 1000px;
     margin: 0 auto;
