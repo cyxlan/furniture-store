@@ -133,7 +133,8 @@ nav {
   opacity: 1;
 }
 
-#products {
+#products,
+#collections {
   padding: 30px 20px;
 }
 
@@ -192,6 +193,36 @@ nav {
 .product-price {
   padding-bottom: 10px;
   font-size: 16px;
+}
+
+#collections h2 {
+  font-size: 24px;
+}
+
+#collections-container {
+  padding-top: 30px;
+}
+
+.collection-img {
+  background-color: goldenrod;
+  max-width: 100%;
+}
+
+#collection-1 {
+  width: 150px;
+  height: 300px;
+}
+
+#collection-2,
+#collection-3 {
+  width: 150px;
+  height: 150px;
+}
+
+#collection-4,
+#collection-5 {
+  width: 300px;
+  height: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
