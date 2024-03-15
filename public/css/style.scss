@@ -27,6 +27,7 @@ a {
 
 $brown: #604d3e;
 $brown-2: #ab998c;
+$accent: #a0381f;
 $bg: #fff6ee;
 $bg-2: #eeded1;
 $font-primary: "Ubuntu", sans-serif;
@@ -54,14 +55,21 @@ nav {
   gap: 20px;
 }
 
-.nav-group i,
-#nav-logo h1 {
-  color: $brown;
+#nav-links a,
+.nav-group button i {
+  transition: all 100ms ease-out;
+}
+#nav-links a:hover,
+#nav-links a:focus,
+.nav-group button:hover i,
+.nav-group button:focus i {
+  color: $accent;
 }
 
 // icons
 .nav-group i {
   cursor: pointer;
+  color: $brown;
 }
 .nav-left i {
   font-size: 30px;
@@ -143,6 +151,15 @@ nav {
     font-size: 16px;
     font-family: $font-secondary;
     font-weight: 500;
+  }
+  a {
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+  }
+  a:hover,
+  a:focus {
+    border-color: $accent;
   }
 }
 
@@ -364,8 +381,7 @@ footer {
     display: block;
 
     ul {
-      padding: 0 20px;
-      height: 35px;
+      padding: 0 10px;
       display: flex;
       gap: 20px;
       justify-content: space-between;
