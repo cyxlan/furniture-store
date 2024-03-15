@@ -110,10 +110,10 @@ nav {
   transform: translateY(-50%);
 }
 #hero-carousel .glide__arrow--left {
-  left: 0;
+  left: 5px;
 }
 #hero-carousel .glide__arrow--right {
-  right: 0;
+  right: 5px;
 }
 #hero-carousel .glide__bullets {
   position: absolute;
