@@ -50,6 +50,52 @@ $(document).ready(function(){
   })
 });
 
+// autoComplete
+const searchAutoComplete = new autoComplete({
+  selector: "#search-input",
+  placeHolder: "Search",
+  data: {
+    src: [
+      "bed frame",
+      "dining table",
+      "sofa",
+      "dresser",
+      "coffee table",
+      "armchair",
+      "nightstand",
+      "bookshelf",
+      "accent chair",
+      "tv stand",
+      "mattress",
+      "rug",
+      "lamp",
+      "mirror",
+      "outdoor furniture",
+      "office furniture",
+      "decor",
+      "furniture sets"
+    ]
+  },
+  resultsList: {
+    element: (list, data) => {
+      if (!data.results.length) {
+        // Create "No Results" message element
+        const message = document.createElement("div");
+        // Add class to the created element
+        message.setAttribute("class", "no_result");
+        // Add message text content
+        message.innerHTML = `<span>No results found for "${data.query}"</span>`;
+        // Append message element to the results list
+        list.prepend(message);
+      }
+    },
+    noResults: true,
+  },
+  resultItem: {
+    highlight: true,
+  }
+});
+
 // Glide
 const heroGlide = new Glide("#hero-carousel", {
   type: "carousel",

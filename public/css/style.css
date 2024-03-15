@@ -88,24 +88,34 @@ nav {
 
 #nav-search-bar {
   z-index: 11;
-  font-size: 0;
-  background-color: grey;
 }
-#nav-search-bar input[type=search] {
-  vertical-align: top;
-  height: 50px;
-  width: calc(100% - 50px);
-  background-color: #fff;
-  padding: 0 20px;
+#nav-search-bar input[type=search],
+#nav-search-bar .autoComplete_wrapper ul {
   font-size: 16px;
   font-family: "Noto Sans", sans-serif;
 }
-#nav-search-bar #search-btn {
-  font-size: 20px;
+#nav-search-bar input[type=search] {
   height: 50px;
-  width: 50px;
-  background-color: #604d3e;
-  color: #fff6ee;
+  width: 100%;
+  background-color: #fff;
+  padding: 0 20px;
+}
+#nav-search-bar .autoComplete_wrapper ul:not([hidden]) {
+  padding: 30px 20px;
+  background-color: #fff;
+  border-bottom: 2px solid #ab998c;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#nav-search-bar .autoComplete_wrapper ul:not([hidden]) li:not(:last-child) {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ab998c;
+}
+#nav-search-bar .autoComplete_wrapper ul:not([hidden]) mark {
+  color: #604d3e;
+  font-weight: 800;
+  background: none;
 }
 
 #nav-links {
