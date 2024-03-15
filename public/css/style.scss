@@ -221,3 +221,30 @@ nav {
   width: 300px;
   height: 150px;
 }
+
+// footer
+footer {
+  background-color: lightgrey;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+.footer-links li:not(:last-child) {
+  padding-bottom: 5px;
+}
+
+.footer-socials ul {
+  display: flex;
+  gap: 10px;
+}
+.social-icon {
+  font-size: 24px;
+}
