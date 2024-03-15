@@ -149,6 +149,11 @@ nav {
   padding: 5px 10px;
   border-radius: 20px;
   border: 2px solid grey;
+  transition: all 200ms ease-in-out;
+}
+.products-categories button.active {
+  border-color: darkgoldenrod;
+  background-color: palegoldenrod;
 }
 
 .product-cards {

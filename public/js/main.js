@@ -36,9 +36,13 @@ $(document).ready(function(){
   $(".products-categories button").on("click", function() {
     const category = $("#products-" + this.textContent.toLowerCase());
     const activeCategory = $(".product-cards.active");
+    const btn = $("#category-" + this.textContent.toLowerCase());
+    const activeBtn = $(".products-categories .active");
 
     if (!category.hasClass("active")) {
       activeCategory.hide().removeClass("active");
+      activeBtn.removeClass("active");
+      btn.addClass("active");
       category.css("display", "flex").hide() // so display will be flex after animation
       .fadeTo(200, 1)
       .addClass("active");
