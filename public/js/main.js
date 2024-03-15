@@ -2,14 +2,34 @@
 $(document).ready(function(){
   // show/hide burger menu
   $("#nav-burger").on("click", function() {
+    // hide search bar
+    if (!$("#nav-search-bar").hasClass("hidden")) {
+      $("#nav-search-bar").slideUp();
+    }
     $("#nav-links").slideDown();
-    $("#nav-burger").hide();
-    $("#nav-close").show();
+    $(this).toggleClass("hidden");
+    $("#nav-close").toggleClass("hidden");
   });
   $("#nav-close").on("click", function() {
     $("#nav-links").slideUp();
-    $("#nav-close").hide();
-    $("#nav-burger").show();
+    $(this).toggleClass("hidden");
+    $("#nav-burger").toggleClass("hidden");
+  });
+
+  // show/hide search bar
+  $("#nav-search").on("click", function() {
+    // hide nav links
+    if ($("#nav-burger").hasClass("hidden")) {
+      $("#nav-links").slideUp();
+      $("#nav-close").toggleClass("hidden");
+      $("#nav-burger").toggleClass("hidden");
+    }
+    if ($("#nav-search-bar").hasClass("hidden")) {
+      $("#nav-search-bar").slideDown();
+    } else {
+      $("#nav-search-bar").slideUp();
+    }
+    $("#nav-search-bar").toggleClass("hidden");
   });
 });
 

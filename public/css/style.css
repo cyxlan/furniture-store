@@ -43,10 +43,6 @@ nav {
   font-size: 30px;
 }
 
-#nav-close {
-  display: none;
-}
-
 #nav-logo {
   background-color: pink;
   height: 50px;
@@ -92,6 +88,10 @@ nav {
 }
 #nav-links li:not(:last-child) {
   border-bottom: 2px solid grey;
+}
+
+.hidden {
+  display: none;
 }
 
 .hero-img {

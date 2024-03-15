@@ -44,9 +44,6 @@ nav {
 .nav-btn i {
   font-size: 30px;
 }
-#nav-close {
-  display: none;
-}
 
 #nav-logo {
   background-color: pink;
@@ -95,6 +92,10 @@ nav {
   li:not(:last-child) {
     border-bottom: 2px solid grey;
   }
+}
+
+.hidden {
+  display: none;
 }
 
 // hero section
