@@ -53,3 +53,10 @@ const heroGlide = new Glide("#hero-carousel", {
   gap: 0
 })
 heroGlide.mount()
+
+// Macy
+const collectionsMacy = Macy({
+  container: "#collections-container",
+  columns: 2,
+  margin: 5
+});

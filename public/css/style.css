@@ -197,10 +197,7 @@ nav {
 
 #collections h2 {
   font-size: 24px;
-}
-
-#collections-container {
-  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .collection-img {
