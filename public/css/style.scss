@@ -46,9 +46,20 @@ nav {
 }
 
 #nav-logo {
-  background-color: pink;
-  height: 50px;
-  width: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  img {
+    height: 40px;
+    width: auto;
+  }
+  h1 {
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-family: "Ubuntu", sans-serif;
+  }
 }
 
 #nav-search-bar {
