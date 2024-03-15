@@ -21,8 +21,8 @@ $(document).ready(function(){
     // hide nav links
     if ($("#nav-burger").hasClass("hidden")) {
       $("#nav-links").slideUp();
-      $("#nav-close").toggleClass("hidden");
-      $("#nav-burger").toggleClass("hidden");
+      $("#nav-close").addClass("hidden");
+      $("#nav-burger").removeClass("hidden");
     }
     if ($("#nav-search-bar").hasClass("hidden")) {
       $("#nav-search-bar").slideDown();
