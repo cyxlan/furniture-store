@@ -103,21 +103,37 @@ nav {
 
 #nav-search-bar {
   z-index: 11;
+  font-size: 0;
+}
+#nav-search-bar form {
+  display: flex;
 }
 #nav-search-bar input[type=search],
 #nav-search-bar .autoComplete_wrapper ul {
   font-size: 16px;
   font-family: "Noto Sans", sans-serif;
 }
+#nav-search-bar .autoComplete_wrapper {
+  width: calc(100% - 50px);
+}
 #nav-search-bar input[type=search] {
-  height: 50px;
   width: 100%;
+  height: 50px;
   background-color: #fff;
   padding: 0 20px;
 }
+#nav-search-bar #search-btn {
+  height: 50px;
+  width: 50px;
+  background-color: #a0381f;
+}
+#nav-search-bar #search-btn i {
+  font-size: 20px;
+  color: #fff6ee;
+}
 #nav-search-bar .autoComplete_wrapper ul:not([hidden]) {
   position: absolute;
-  width: 100%;
+  width: calc(100% - 50px);
   padding: 30px 20px;
   background-color: #fff;
   border-bottom: 2px solid #ab998c;
