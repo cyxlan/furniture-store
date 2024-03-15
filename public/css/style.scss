@@ -158,3 +158,36 @@ nav {
     border: 2px solid grey;
   }
 }
+
+.product-cards {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.product-card {
+  max-width: 150px;
+}
+.product-img {
+  width: 150px;
+  height: 150px;
+}
+.products-featured .product-img {
+  background-color: darkred;
+}
+.products-new .product-img {
+  background-color: darkorange;
+}
+.products-bestsellers .product-img {
+  background-color: darkgreen;
+}
+.product-name {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 24px;
+}
+.product-price {
+  padding-bottom: 10px;
+  font-size: 16px;
+}
