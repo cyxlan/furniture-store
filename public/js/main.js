@@ -4,7 +4,7 @@ $(document).ready(function(){
   $("#nav-burger").on("click", function() {
     // hide search bar
     if (!$("#nav-search-bar").hasClass("hidden")) {
-      $("#nav-search-bar").slideUp();
+      $("#nav-search-bar").slideUp().addClass("hidden");
     }
     $("#nav-links").slideDown();
     $(this).toggleClass("hidden");
