@@ -59,7 +59,7 @@ nav {
   color: #a0381f;
 }
 
-.nav-group i {
+.nav-group button {
   cursor: pointer;
   color: #604d3e;
 }
@@ -125,11 +125,16 @@ nav {
 #nav-search-bar #search-btn {
   height: 50px;
   width: 50px;
-  background-color: #a0381f;
+  background-color: #604d3e;
+  transition: background-color 100ms ease-out;
 }
 #nav-search-bar #search-btn i {
   font-size: 20px;
-  color: #fff6ee;
+  color: #fff;
+}
+#nav-search-bar #search-btn:hover,
+#nav-search-bar #search-btn:active {
+  background-color: #a0381f;
 }
 #nav-search-bar .autoComplete_wrapper ul:not([hidden]) {
   position: absolute;
@@ -401,14 +406,25 @@ footer h2 {
   #nav-search-bar input[type=search],
   #nav-search-bar .autoComplete_wrapper ul:not([hidden]) {
     border: 2px solid #ab998c;
-    border-radius: 20px;
     width: 500px;
   }
   #nav-search-bar input[type=search] {
     height: 40px;
+    border-radius: 20px 0 0 20px;
+    border-right: 0;
+  }
+  #nav-search-bar #search-btn {
+    height: 40px;
+    width: 50px;
+    border-radius: 0 20px 20px 0;
+    background-color: #604d3e;
+  }
+  #nav-search-bar #search-btn i {
+    margin-left: -5px;
   }
   #nav-search-bar .autoComplete_wrapper ul:not([hidden]) {
     top: 60px;
+    border-radius: 20px;
   }
 }
 

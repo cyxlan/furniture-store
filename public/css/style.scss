@@ -67,7 +67,7 @@ nav {
 }
 
 // icons
-.nav-group i {
+.nav-group button {
   cursor: pointer;
   color: $brown;
 }
@@ -131,12 +131,17 @@ nav {
   #search-btn {
     height: 50px;
     width: 50px;
-    background-color: $accent;
+    background-color: $brown;
+    transition: background-color 100ms ease-out;
 
     i {
       font-size: 20px;
-      color: $bg;
+      color: #fff;
     }
+  }
+  #search-btn:hover,
+  #search-btn:active {
+    background-color: $accent;
   }
   .autoComplete_wrapper ul:not([hidden]) {
     position: absolute;
@@ -420,14 +425,26 @@ footer {
     input[type="search"],
     .autoComplete_wrapper ul:not([hidden]) {
       border: 2px solid $brown-2;
-      border-radius: 20px;
       width: 500px;
     }
     input[type="search"] {
       height: 40px;
+      border-radius: 20px 0 0 20px;
+      border-right: 0;
+    }
+    #search-btn {
+      height: 40px;
+      width: 50px;
+      border-radius: 0 20px 20px 0;
+      background-color: $brown;
+      
+      i {
+        margin-left: -5px;
+      }
     }
     .autoComplete_wrapper ul:not([hidden]) {
       top: 60px;
+      border-radius: 20px;
     }
   }
 }
