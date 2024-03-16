@@ -412,7 +412,7 @@ footer h2 {
     border-bottom: 2px solid #ab998c;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   .nav-left button,
   #nav-search {
     display: none;
@@ -440,7 +440,7 @@ footer h2 {
   #nav-search-bar input[type=search],
   #nav-search-bar .autoComplete_wrapper ul:not([hidden]) {
     border: 2px solid #ab998c;
-    width: 500px;
+    width: 450px;
   }
   #nav-search-bar input[type=search] {
     height: 40px;

@@ -432,7 +432,7 @@ footer {
 }
 
 // medium & up screens
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   // hide burger menu & toggle search btn
   .nav-left button,
   #nav-search {
@@ -465,7 +465,7 @@ footer {
     input[type="search"],
     .autoComplete_wrapper ul:not([hidden]) {
       border: 2px solid $brown-2;
-      width: 500px;
+      width: 450px;
     }
     input[type="search"] {
       height: 40px;
