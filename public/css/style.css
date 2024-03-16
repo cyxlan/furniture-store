@@ -363,25 +363,7 @@ main {
 }
 
 .collection-img {
-  background-color: goldenrod;
   max-width: 100%;
-}
-
-#collection-1 {
-  width: 150px;
-  height: 300px;
-}
-
-#collection-2,
-#collection-3 {
-  width: 150px;
-  height: 150px;
-}
-
-#collection-4,
-#collection-5 {
-  width: 300px;
-  height: 150px;
 }
 
 footer {
