@@ -198,13 +198,19 @@ header {
   padding: 8px 10px;
 }
 
-.hero-img img {
-  height: 250px;
-  width: 100%;
-}
-
 #hero-carousel {
   position: relative;
+}
+#hero-carousel .glide__slides {
+  height: 250px;
+}
+#hero-carousel .hero-img {
+  display: flex;
+  align-items: center;
+}
+#hero-carousel .hero-img img {
+  height: auto;
+  width: 100%;
 }
 #hero-carousel .glide__arrow {
   position: absolute;
@@ -424,6 +430,9 @@ footer h2 {
   #nav-search-bar .autoComplete_wrapper ul:not([hidden]) {
     top: 60px;
     border-radius: 20px;
+  }
+  #hero-carousel .glide__slides {
+    height: 400px;
   }
 }
 

@@ -211,14 +211,23 @@ header {
   }
 }
 
-.hero-img img {
-  height: 250px;
-  width: 100%;
-}
-
 #hero-carousel {
   position: relative;
 
+  // slide container
+  .glide__slides {
+    height: 250px;
+  }
+  // vertically center img
+  .hero-img {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
   .glide__arrow {
     position: absolute;
     font-size: 30px;
@@ -446,6 +455,12 @@ footer {
     .autoComplete_wrapper ul:not([hidden]) {
       top: 60px;
       border-radius: 20px;
+    }
+  }
+
+  #hero-carousel {
+    .glide__slides {
+      height: 400px;
     }
   }
 }
