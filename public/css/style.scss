@@ -56,8 +56,19 @@ body {
 
 // navbar
 header {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 200ms ease-in-out;
+  width: 100%;
   background-color: $bg;
 }
+/* space for fixed header */
+main {
+  margin-top: 60px;
+}
+
 #nav-topbar {
   height: 60px;
   padding: 0 20px;
@@ -444,6 +455,11 @@ footer {
 
 // medium & up screens
 @media only screen and (min-width: 767px) {
+  // space for fixed header
+  main {
+    margin-top: 100px;
+  }
+  
   // hide burger menu & toggle search btn
   .nav-left button,
   #nav-search {
@@ -458,6 +474,7 @@ footer {
   // display nav links as row under main navbar
   #nav-links {
     display: block;
+    height: 40px;
 
     ul {
       padding: 0 10px;

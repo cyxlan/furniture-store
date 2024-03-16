@@ -50,6 +50,29 @@ $(document).ready(function(){
   })
 });
 
+// hide/show header on scroll down/up
+function scrollHeader() {
+  let prevScrollPos = window.scrollY;
+  const header = document.querySelector("header");
+  const headerHeight = header.offsetTop + header.offsetHeight;
+  
+  window.onscroll = function() {
+    let currentScrollPos = window.scrollY;
+  
+    /* if scrolling up or header hasn't been passed, show header at top */
+    if (prevScrollPos > currentScrollPos || currentScrollPos < headerHeight) {
+      header.style.top = "0";
+    }
+    /* otherwise, hide header */
+    else {  
+      header.style.top = `-${headerHeight}px`;
+    }
+    prevScrollPos = currentScrollPos;
+  }
+}
+window.addEventListener("load", scrollHeader);
+window.addEventListener("resize", scrollHeader);
+
 // search autocomplete
 const searchAutoComplete = new autoComplete({
   selector: "#search-input",

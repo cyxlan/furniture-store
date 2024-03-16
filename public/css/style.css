@@ -49,7 +49,18 @@ body {
 }
 
 header {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 200ms ease-in-out;
+  width: 100%;
   background-color: #fff6ee;
+}
+
+/* space for fixed header */
+main {
+  margin-top: 60px;
 }
 
 #nav-topbar {
@@ -424,6 +435,9 @@ footer h2 {
   }
 }
 @media only screen and (min-width: 767px) {
+  main {
+    margin-top: 100px;
+  }
   .nav-left button,
   #nav-search {
     display: none;
@@ -435,6 +449,7 @@ footer h2 {
   }
   #nav-links {
     display: block;
+    height: 40px;
   }
   #nav-links ul {
     padding: 0 10px;
