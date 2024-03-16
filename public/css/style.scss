@@ -41,6 +41,19 @@ body {
   color: $brown;
 }
 
+#search-btn,
+.hero-overlay button {
+  cursor: pointer;
+  background-color: $brown;
+  transition: background-color 100ms ease-out;
+}
+#search-btn:hover,
+#search-btn:active,
+.hero-overlay button:hover,
+.hero-overlay button:active {
+  background-color: $accent;
+}
+
 // navbar
 header {
   background-color: $bg;
@@ -126,17 +139,11 @@ header {
   #search-btn {
     height: 50px;
     width: 50px;
-    background-color: $brown;
-    transition: background-color 100ms ease-out;
 
     i {
       font-size: 20px;
       color: #fff;
     }
-  }
-  #search-btn:hover,
-  #search-btn:active {
-    background-color: $accent;
   }
   .autoComplete_wrapper ul:not([hidden]) {
     position: absolute;
@@ -193,7 +200,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
   padding: 10px;
   display: flex;
   height: 100%;
@@ -220,6 +227,10 @@ header {
     color: #fff;
     padding: 6px 15px;
     margin-bottom: 20px;
+  }
+  button:hover,
+  button:active {
+    background-color: $accent;
   }
 }
 
@@ -258,7 +269,6 @@ header {
   .glide__arrow {
     font-size: 30px;
   }
-
   .glide__bullets {
     position: absolute;
     bottom: 10px;
@@ -444,6 +454,7 @@ footer {
     max-width: 1000px;
     margin: 0 auto;
   }
+
   // horizontal nav links under navbar
   #nav-links {
     display: block;
@@ -476,7 +487,6 @@ footer {
       height: 40px;
       width: 50px;
       border-radius: 0 20px 20px 0;
-      background-color: $brown;
       
       i {
         margin-left: -5px;
@@ -488,13 +498,32 @@ footer {
     }
   }
 
+  .hero-overlay {
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: flex-start;
+    gap: 20px;
+
+    h2 {
+      font-size: 36px;
+      line-height: 40px;
+      padding: 8px 16px;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+    }
+  }
+
   #hero-carousel {
     .glide__slides {
-      height: 400px;
+      height: 300px;
     }
-
-    // .glide__arrows {
-    //   padding: 20px;
-    // }
+    .glide__arrows {
+      padding: 0 20px;
+    }
   }
 }
