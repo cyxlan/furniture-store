@@ -40,6 +40,7 @@ button {
 }
 body {
   color: $brown;
+  background-color: $bg;
 }
 
 #search-btn,
@@ -343,6 +344,7 @@ main {
   flex-direction: column;
   border-radius: 20px;
   outline: 2px solid $brown-2;
+  background-color: #fff;
   cursor: pointer;
   transition: outline-color 200ms ease-out;
 }

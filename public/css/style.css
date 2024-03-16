@@ -33,6 +33,7 @@ button {
 
 body {
   color: #604d3e;
+  background-color: #fff6ee;
 }
 
 #search-btn,
@@ -326,6 +327,7 @@ main {
   flex-direction: column;
   border-radius: 20px;
   outline: 2px solid #ab998c;
+  background-color: #fff;
   cursor: pointer;
   transition: outline-color 200ms ease-out;
 }
