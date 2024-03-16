@@ -186,6 +186,7 @@ header {
 // hero section
 #hero {
   position: relative;
+  height: 250px;
 }
 .hero-overlay {
   position: absolute;
@@ -374,6 +375,18 @@ footer {
   font-size: 24px;
 }
 
+// extra small screens
+@media only screen and (max-width: 380px) {
+  // hide navbar name
+  #nav-logo h1 {
+    display: none;
+  }
+
+  #hero-carousel .hero-img img {
+    height: 250px;
+    width: auto;
+  }
+}
 // small screens
 @media only screen and (max-width: 767px) {
   .hidden {
