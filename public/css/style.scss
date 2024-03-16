@@ -420,7 +420,7 @@ footer {
   #nav-logo h1 {
     display: none;
   }
-
+  // adapt hero img sizing
   #hero-carousel .hero-img img {
     height: 250px;
     width: auto;
@@ -432,6 +432,7 @@ footer {
     display: none;
   }
 
+  // navbar
   #nav-search-bar,
   #nav-links {
     position: absolute;
@@ -471,6 +472,7 @@ footer {
     display: none;
   }
 
+  // navbar
   #nav-topbar,
   #nav-links ul {
     max-width: 1000px;
@@ -492,7 +494,7 @@ footer {
     }
   }
 
-  // position searchbar on main navbar
+  // position search bar on main navbar
   #nav-search-bar {
     position: static;
 
@@ -521,6 +523,7 @@ footer {
     }
   }
 
+  // hero
   .hero-overlay {
     padding: 20px;
     width: 100%;
