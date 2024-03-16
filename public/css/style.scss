@@ -310,22 +310,20 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 25px;
 
   button {
     font-size: 22px;
     font-weight: 500;
     color: $brown;
-    padding: 5px 15px;
-    border-radius: 20px;
-    outline: 2px solid $brown-2;
-    transition: color 200ms ease-in-out, outline-color 200ms ease-in-out;
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+    transition: color 200ms ease-in-out, border-color 200ms ease-in-out;
   }
   button:hover,
   button:focus,
   button.active {
-    outline-color: $accent;
-    outline-width: 3px;
+    border-color: $accent;
     color: $accent;
   }
 }
@@ -561,7 +559,7 @@ footer {
 
   // products
   .products-categories {
-    gap: 25px;
+    gap: 50px;
 
     button {
       font-size: 24px;

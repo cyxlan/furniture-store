@@ -293,22 +293,20 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 25px;
 }
 .products-categories button {
   font-size: 22px;
   font-weight: 500;
   color: #604d3e;
-  padding: 5px 15px;
-  border-radius: 20px;
-  outline: 2px solid #ab998c;
-  transition: color 200ms ease-in-out, outline-color 200ms ease-in-out;
+  padding-bottom: 5px;
+  border-bottom: 3px solid transparent;
+  transition: color 200ms ease-in-out, border-color 200ms ease-in-out;
 }
 .products-categories button:hover,
 .products-categories button:focus,
 .products-categories button.active {
-  outline-color: #a0381f;
-  outline-width: 3px;
+  border-color: #a0381f;
   color: #a0381f;
 }
 
@@ -517,7 +515,7 @@ footer h2 {
     height: 300px;
   }
   .products-categories {
-    gap: 25px;
+    gap: 50px;
   }
   .products-categories button {
     font-size: 24px;
