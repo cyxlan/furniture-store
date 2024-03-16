@@ -505,6 +505,25 @@ footer h2 {
   #hero-carousel .glide__slides {
     height: 300px;
   }
+  .product-cards {
+    gap: 30px;
+  }
+  .product-card {
+    max-width: 250px;
+  }
+  .product-img {
+    width: 250px;
+    height: 250px;
+  }
+  .product-name {
+    padding: 15px 10px 15px;
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .product-price {
+    padding: 0 10px 15px;
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
