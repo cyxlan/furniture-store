@@ -186,7 +186,8 @@ main {
   font-weight: 500;
 }
 #nav-links a {
-  border-bottom: 2px solid transparent;
+  padding-bottom: 7.5px;
+  border-bottom: 3px solid transparent;
 }
 #nav-links a:hover,
 #nav-links a:focus {
