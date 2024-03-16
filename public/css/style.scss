@@ -311,18 +311,21 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 
   button {
-    font-size: 20px;
-    padding: 5px 10px;
+    font-size: 22px;
+    font-weight: 500;
+    color: $brown;
+    padding: 5px 15px;
     border-radius: 20px;
-    border: 2px solid grey;
-    transition: all 200ms ease-in-out;
+    outline: 2px solid $brown-2;
+    transition: color 200ms ease-in-out, outline-color 200ms ease-in-out;
   }
   button.active {
-    border-color: darkgoldenrod;
-    background-color: palegoldenrod;
+    outline-color: $accent;
+    outline-width: 3px;
+    color: $accent;
   }
 }
 
