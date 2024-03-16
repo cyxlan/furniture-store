@@ -33,11 +33,13 @@ $bg-2: #eeded1;
 $font-primary: "Ubuntu", sans-serif;
 $font-secondary: "Noto Sans", sans-serif;
 
-body {
+body,
+button {
   font-family: $font-primary;
+}
+body {
   color: $brown;
 }
-
 
 // navbar
 header {
@@ -193,22 +195,32 @@ header {
   top: 0;
   left: 0;
   z-index: 1;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   height: 100%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 
+  h2,
+  button {
+    border-radius: 20px;
+    font-weight: 500;
+  }
   h2 {
-    font-size: 30px;
+    font-size: 26px;
     line-height: 36px;
-    max-width: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 5px 10px;
+    font-weight: 500;
   }
   button {
     font-size: 18px;
-    background-color: #fff;
-    padding: 8px 10px;
+    background-color: $brown;
+    color: #fff;
+    padding: 6px 15px;
+    margin-bottom: 20px;
   }
 }
 
@@ -229,6 +241,11 @@ header {
       width: 100%;
     }
   }
+  .glide__arrow,
+  .glide__bullet {
+    cursor: pointer;
+    color: $brown;
+  }
   .glide__arrow {
     position: absolute;
     font-size: 30px;
@@ -236,15 +253,15 @@ header {
     transform: translateY(-50%);
   }
   .glide__arrow--left {
-    left: 5px;
+    left: 2px;
   }
   .glide__arrow--right {
-    right: 5px;
+    right: 2px;
   }
 
   .glide__bullets {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
   }

@@ -25,8 +25,12 @@ a {
   width: 1px;
 }
 
-body {
+body,
+button {
   font-family: "Ubuntu", sans-serif;
+}
+
+body {
   color: #604d3e;
 }
 
@@ -181,22 +185,32 @@ header {
   top: 0;
   left: 0;
   z-index: 1;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   height: 100%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 }
+.hero-overlay h2,
+.hero-overlay button {
+  border-radius: 20px;
+  font-weight: 500;
+}
 .hero-overlay h2 {
-  font-size: 30px;
+  font-size: 26px;
   line-height: 36px;
-  max-width: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 5px 10px;
+  font-weight: 500;
 }
 .hero-overlay button {
   font-size: 18px;
-  background-color: #fff;
-  padding: 8px 10px;
+  background-color: #604d3e;
+  color: #fff;
+  padding: 6px 15px;
+  margin-bottom: 20px;
 }
 
 #hero-carousel {
@@ -213,6 +227,11 @@ header {
   height: auto;
   width: 100%;
 }
+#hero-carousel .glide__arrow,
+#hero-carousel .glide__bullet {
+  cursor: pointer;
+  color: #604d3e;
+}
 #hero-carousel .glide__arrow {
   position: absolute;
   font-size: 30px;
@@ -220,14 +239,14 @@ header {
   transform: translateY(-50%);
 }
 #hero-carousel .glide__arrow--left {
-  left: 5px;
+  left: 2px;
 }
 #hero-carousel .glide__arrow--right {
-  right: 5px;
+  right: 2px;
 }
 #hero-carousel .glide__bullets {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
 }
