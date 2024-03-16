@@ -194,9 +194,7 @@ main {
     font-weight: 500;
   }
   a {
-    padding: 0 10px;
-    border-radius: 20px;
-    border: 2px solid transparent;
+    border-bottom: 2px solid transparent;
   }
   a:hover,
   a:focus {
@@ -349,6 +347,12 @@ main {
   flex-direction: column;
   border-radius: 20px;
   outline: 2px solid $brown-2;
+  cursor: pointer;
+  transition: outline-color 200ms ease-out;
+}
+.product-card:hover {
+  outline-color: $accent;
+  outline-width: 3px;
 }
 .product-img {
   width: 150px;
@@ -490,7 +494,7 @@ footer {
     height: 40px;
 
     ul {
-      padding: 0 10px;
+      padding: 0 20px;
       display: flex;
       gap: 20px;
       justify-content: space-between;
