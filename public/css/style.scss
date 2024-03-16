@@ -550,8 +550,10 @@ footer {
       }
     }
     .autoComplete_wrapper ul:not([hidden]) {
-      top: 60px;
-      border-radius: 20px;
+      z-index: -1;
+      padding-top: 40px;
+      top: 40px;
+      border-radius: 0 0 20px 20px;
     }
   }
 
