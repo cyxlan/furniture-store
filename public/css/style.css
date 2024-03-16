@@ -382,11 +382,22 @@ main {
 
 footer {
   background-color: #eeded1;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 30px 20px;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   gap: 30px;
+}
+.footer-container a {
+  transition: all 100ms ease-out;
+}
+.footer-container a:hover,
+.footer-container a:focus {
+  color: #a0381f;
 }
 
 .footer-links h2 {
@@ -400,8 +411,16 @@ footer {
 .footer-links a {
   font-family: "Noto Sans", sans-serif;
   font-size: 16px;
+  border-bottom: 3px solid transparent;
+}
+.footer-links a:hover,
+.footer-links a:focus {
+  border-color: #a0381f;
 }
 
+.footer-socials {
+  flex-basis: 100%;
+}
 .footer-socials ul {
   display: flex;
   gap: 20px;
@@ -541,6 +560,22 @@ footer {
   }
   #collections h2 {
     font-size: 36px;
+  }
+  .footer-container {
+    padding: 40px 20px;
+    gap: 40px;
+  }
+  .footer-links h2 {
+    font-size: 24px;
+  }
+  .footer-links li:not(:last-child) {
+    padding-bottom: 15px;
+  }
+  .footer-links a {
+    font-size: 18px;
+  }
+  .social-icon {
+    font-size: 26px;
   }
 }
 
