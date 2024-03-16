@@ -300,14 +300,11 @@ main {
   }
 }
 
+// products section
 #products {
   padding: 30px 20px;
 }
-#collections {
-  padding: 20px 20px 30px;
-}
 
-// products section
 .products-categories {
   display: flex;
   flex-wrap: wrap;
@@ -374,7 +371,8 @@ main {
 
 // collections section
 #collections {
-  max-width: 1000px;
+  padding: 20px 20px 30px;
+  max-width: 800px;
   margin: 0 auto;
 
   h2 {
@@ -386,7 +384,13 @@ main {
 }
 
 .collection-img {
+  cursor: pointer;
   border-radius: 20px;
+  outline: 3px solid transparent;
+  transition: outline-color 200ms ease-out;
+}
+.collection-img:hover {
+  outline-color: $accent;
 }
 
 // footer
@@ -579,5 +583,14 @@ footer {
   .product-price {
     padding: 0 10px 15px;
     font-size: 20px;
+  }
+
+  // collections
+  #collections {
+    padding-top: 30px;
+
+    h2 {
+      font-size: 36px;
+    }
   }
 }
