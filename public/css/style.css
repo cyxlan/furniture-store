@@ -155,7 +155,9 @@ main {
   width: calc(100% - 50px);
   padding: 30px 20px;
   background-color: #fff;
+  border-right: 2px solid #ab998c;
   border-bottom: 2px solid #ab998c;
+  border-bottom-right-radius: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
