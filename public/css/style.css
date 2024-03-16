@@ -207,7 +207,8 @@ main {
   height: 100%;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 10px;
 }
 .hero-overlay h2,
 .hero-overlay button {
@@ -258,7 +259,7 @@ main {
   z-index: 2;
   display: flex;
   width: 100%;
-  padding: 0 2px;
+  padding: 0 20px;
   justify-content: space-between;
   top: 50%;
   transform: translateY(-50%);
@@ -433,6 +434,9 @@ footer h2 {
   #nav-links li:not(:last-child) {
     border-bottom: 2px solid #ab998c;
   }
+  #hero-carousel .glide__arrows {
+    display: none;
+  }
 }
 @media only screen and (min-width: 767px) {
   main {
@@ -491,7 +495,6 @@ footer h2 {
     max-width: 1000px;
     left: 50%;
     transform: translateX(-50%);
-    justify-content: flex-start;
     gap: 20px;
   }
   .hero-overlay h2 {
@@ -505,9 +508,6 @@ footer h2 {
   }
   #hero-carousel .glide__slides {
     height: 300px;
-  }
-  #hero-carousel .glide__arrows {
-    padding: 0 20px;
   }
 }
 

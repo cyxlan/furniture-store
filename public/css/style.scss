@@ -218,7 +218,8 @@ main {
   height: 100%;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 10px;
 
   h2,
   button {
@@ -273,7 +274,7 @@ main {
     z-index: 2;
     display: flex;
     width: 100%;
-    padding: 0 2px;
+    padding: 0 20px;
     justify-content: space-between;
     top: 50%;
     transform: translateY(-50%);
@@ -451,6 +452,11 @@ footer {
       border-bottom: 2px solid $brown-2;
     }
   }
+
+  // hide carousel arrows
+  #hero-carousel .glide__arrows {
+    display: none;
+  }
 }
 
 // medium & up screens
@@ -522,7 +528,6 @@ footer {
     max-width: 1000px;
     left: 50%;
     transform: translateX(-50%);
-    justify-content: flex-start;
     gap: 20px;
 
     h2 {
@@ -539,9 +544,6 @@ footer {
   #hero-carousel {
     .glide__slides {
       height: 300px;
-    }
-    .glide__arrows {
-      padding: 0 20px;
     }
   }
 }
