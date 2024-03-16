@@ -8,6 +8,7 @@ input {
   padding: 0;
   margin: 0;
   background: none;
+  cursor: pointer;
 }
 a {
   color: inherit;
@@ -43,7 +44,6 @@ body {
 
 #search-btn,
 .hero-overlay button {
-  cursor: pointer;
   background-color: $brown;
   transition: background-color 100ms ease-out;
 }
@@ -94,7 +94,6 @@ main {
 
 // icons
 .nav-group button {
-  cursor: pointer;
   color: $brown;
 }
 .nav-left i {
@@ -324,6 +323,8 @@ main {
     outline: 2px solid $brown-2;
     transition: color 200ms ease-in-out, outline-color 200ms ease-in-out;
   }
+  button:hover,
+  button:focus,
   button.active {
     outline-color: $accent;
     outline-width: 3px;
@@ -555,6 +556,14 @@ footer {
   }
 
   // products
+  .products-categories {
+    gap: 25px;
+
+    button {
+      font-size: 24px;
+    }
+  }
+
   .product-cards {
     gap: 30px;
   }

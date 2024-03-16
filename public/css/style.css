@@ -8,6 +8,7 @@ input {
   padding: 0;
   margin: 0;
   background: none;
+  cursor: pointer;
 }
 
 a {
@@ -36,7 +37,6 @@ body {
 
 #search-btn,
 .hero-overlay button {
-  cursor: pointer;
   background-color: #604d3e;
   transition: background-color 100ms ease-out;
 }
@@ -89,7 +89,6 @@ main {
 }
 
 .nav-group button {
-  cursor: pointer;
   color: #604d3e;
 }
 
@@ -307,6 +306,8 @@ main {
   outline: 2px solid #ab998c;
   transition: color 200ms ease-in-out, outline-color 200ms ease-in-out;
 }
+.products-categories button:hover,
+.products-categories button:focus,
 .products-categories button.active {
   outline-color: #a0381f;
   outline-width: 3px;
@@ -509,6 +510,12 @@ footer h2 {
   }
   #hero-carousel .glide__slides {
     height: 300px;
+  }
+  .products-categories {
+    gap: 25px;
+  }
+  .products-categories button {
+    font-size: 24px;
   }
   .product-cards {
     gap: 30px;
