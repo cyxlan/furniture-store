@@ -203,7 +203,6 @@ main {
   z-index: 3;
   padding: 10px;
   display: flex;
-  height: 100%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -252,19 +251,19 @@ main {
 #hero-carousel .glide__bullet {
   cursor: pointer;
   color: #604d3e;
-}
-#hero-carousel .glide__arrows {
-  position: absolute;
   z-index: 2;
-  display: flex;
-  width: 100%;
-  padding: 0 20px;
-  justify-content: space-between;
+}
+#hero-carousel .glide__arrow {
+  position: absolute;
+  font-size: 30px;
   top: 50%;
   transform: translateY(-50%);
 }
-#hero-carousel .glide__arrow {
-  font-size: 30px;
+#hero-carousel .glide__arrow--left {
+  left: 20px;
+}
+#hero-carousel .glide__arrow--right {
+  right: 20px;
 }
 #hero-carousel .glide__bullets {
   position: absolute;
@@ -491,10 +490,6 @@ footer h2 {
   }
   .hero-overlay {
     padding: 20px;
-    width: 100%;
-    max-width: 1000px;
-    left: 50%;
-    transform: translateX(-50%);
     gap: 20px;
   }
   .hero-overlay h2 {
