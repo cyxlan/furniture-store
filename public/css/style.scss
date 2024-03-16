@@ -117,7 +117,6 @@ header {
 
 #nav-search-bar {
   z-index: 11;
-  font-size: 0; // remove gap between elements
 
   form {
     display: flex;
@@ -128,7 +127,7 @@ header {
     font-family: $font-secondary;
   }
   .autoComplete_wrapper {
-    width: calc(100% - 50px);
+    width: calc(100% - 50px); // leave space for search btn
   }
   input[type="search"] {
     width: 100%;
@@ -145,6 +144,7 @@ header {
       color: #fff;
     }
   }
+  // autocomplete popup
   .autoComplete_wrapper ul:not([hidden]) {
     position: absolute;
     width: calc(100% - 50px);
@@ -196,6 +196,7 @@ header {
 #hero {
   position: relative;
 }
+// CTA + btn
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -454,8 +455,7 @@ footer {
     max-width: 1000px;
     margin: 0 auto;
   }
-
-  // horizontal nav links under navbar
+  // display nav links as row under main navbar
   #nav-links {
     display: block;
 
@@ -470,6 +470,7 @@ footer {
     }
   }
 
+  // position searchbar on main navbar
   #nav-search-bar {
     position: static;
 

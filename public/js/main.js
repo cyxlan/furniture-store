@@ -2,7 +2,7 @@
 $(document).ready(function(){
   // show/hide burger menu
   $("#nav-burger").on("click", function() {
-    // hide search bar
+    // if search bar is open, close it first
     if (!$("#nav-search-bar").hasClass("hidden")) {
       $("#nav-search-bar").slideUp().addClass("hidden");
     }
@@ -18,7 +18,7 @@ $(document).ready(function(){
 
   // show/hide search bar
   $("#nav-search").on("click", function() {
-    // hide nav links
+    // if burger menu is open, close it first
     if ($("#nav-burger").hasClass("hidden")) {
       $("#nav-links").slideUp();
       $("#nav-close").addClass("hidden");
@@ -50,11 +50,12 @@ $(document).ready(function(){
   })
 });
 
-// autoComplete
+// search autocomplete
 const searchAutoComplete = new autoComplete({
   selector: "#search-input",
   placeHolder: "Search",
   data: {
+    // suggestions list
     src: [
       "bed frame",
       "dining table",
@@ -96,7 +97,7 @@ const searchAutoComplete = new autoComplete({
   }
 });
 
-// Glide
+// hero img carousel
 const heroGlide = new Glide("#hero-carousel", {
   type: "carousel",
   startAt: 1,
@@ -105,7 +106,7 @@ const heroGlide = new Glide("#hero-carousel", {
 })
 heroGlide.mount()
 
-// Macy
+// collections img layout
 const collectionsMacy = Macy({
   container: "#collections-container",
   columns: 2,

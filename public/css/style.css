@@ -113,7 +113,6 @@ header {
 
 #nav-search-bar {
   z-index: 11;
-  font-size: 0;
 }
 #nav-search-bar form {
   display: flex;
