@@ -373,8 +373,6 @@ main {
 // collections section
 #collections {
   padding: 20px 20px 30px;
-  max-width: 800px;
-  margin: 0 auto;
 
   h2 {
     text-align: center;
@@ -399,8 +397,6 @@ footer {
   background-color: $bg-2;
 }
 .footer-container {
-  max-width: 1000px;
-  margin: 0 auto;
   padding: 30px 20px;
   display: flex;
   flex-wrap: wrap;
@@ -506,12 +502,14 @@ footer {
     display: none;
   }
 
-  // navbar
   #nav-topbar,
-  #nav-links ul {
+  #nav-links ul,
+  #collections,
+  .footer-container {
     max-width: 1000px;
     margin: 0 auto;
   }
+
   // display nav links as row under main navbar
   #nav-links {
     display: block;

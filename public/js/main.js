@@ -133,5 +133,11 @@ heroGlide.mount()
 const collectionsMacy = Macy({
   container: "#collections-container",
   columns: 2,
-  margin: 20
+  margin: 20,
+  mobileFirst: true,
+  breakAt: {
+    767: {
+      columns: 3
+    }
+  }
 });

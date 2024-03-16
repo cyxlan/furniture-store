@@ -359,8 +359,6 @@ main {
 
 #collections {
   padding: 20px 20px 30px;
-  max-width: 800px;
-  margin: 0 auto;
 }
 #collections h2 {
   text-align: center;
@@ -385,8 +383,6 @@ footer {
 }
 
 .footer-container {
-  max-width: 1000px;
-  margin: 0 auto;
   padding: 30px 20px;
   display: flex;
   flex-wrap: wrap;
@@ -472,7 +468,9 @@ footer {
     display: none;
   }
   #nav-topbar,
-  #nav-links ul {
+  #nav-links ul,
+  #collections,
+  .footer-container {
     max-width: 1000px;
     margin: 0 auto;
   }
