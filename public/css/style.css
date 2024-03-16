@@ -381,25 +381,30 @@ main {
 }
 
 footer {
-  background-color: lightgrey;
+  background-color: #eeded1;
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 20px;
-}
-footer h2 {
-  font-size: 20px;
-  padding-bottom: 10px;
+  gap: 30px;
 }
 
+.footer-links h2 {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
 .footer-links li:not(:last-child) {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+}
+.footer-links a {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
 }
 
 .footer-socials ul {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .social-icon {
